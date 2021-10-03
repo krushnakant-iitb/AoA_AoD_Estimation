@@ -34,7 +34,7 @@ end
 Amat=convertdBtoStandard(Amat);
 
 %% Solving y=Ax
-sigma=0.00001;
+sigma=0.0001;
 epsilon=1e-6;
 b=new_SBL_algo(sigma,Amat,PAS,epsilon); % Reconstruction using l1_ls_nonneg package.
 save('CompSens12_5deg_sum.mat', 'PAS', 'b');
